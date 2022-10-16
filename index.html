@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+    <div class="calculator_wrapper">
+        <form name="form">
+
+            
+            <input style="text-align:right;" id="result" type="text" placeholder="0" name="inp">
+            <button class="ac">AC</button>
+            <button class="square">x <sup>2</sup></button>
+            <button class="c" type="button" onclick="let inpText = form.inp.value.split(''); inpText.pop();form.inp.value = inpText.join('')">C</button>
+            
+            <input id="gold" type="button" value="-" onclick="form.inp.value += '-'">
+            <input type="button" value="8" onclick="form.inp.value += '8'">
+            <input type="button" value="7" onclick="form.inp.value += '7'">
+            
+            
+            <input type="button" value="9" onclick="form.inp.value += '9'">
+            
+            <input id="gold" type="button" value="/" onclick="form.inp.value += '/'">
+            <input type="button" value="4" onclick="form.inp.value += '4'">
+            
+            <input type="button" value="5" onclick="form.inp.value += '5'">
+            
+            
+            <input type="button" value="6" onclick="form.inp.value += '6'">
+               
+            <input id="gold" type="button" value="*" onclick="form.inp.value += '*'">
+            
+            <input type="button" value="1" onclick="form.inp.value += '1'">
+            
+            <input type="button" value="2" onclick="form.inp.value += '2'">
+            
+            <input type="button" value="3" onclick="form.inp.value += '3'">
+            
+            <input id="gold" type="button" value="+" onclick="form.inp.value += '+'">
+            
+            
+            <input id="zero" type="button" value="0" onclick="form.inp.value += '0'"> 
+            
+            <input type="button" value="." onclick="form.inp.value += '.'">
+            
+            <input id="gold" type="button" value="=" onclick="form.inp.value = eval(form.inp.value)">
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
